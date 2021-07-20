@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+
+   
+    <style>
+        #log {
+            position: absolute;
+            width: 20%;
+            height: 83px;
+            left: 55%;
+            top: 500px;
+            background-color: #3DB196;
+        }
+
+
+        .button {
+            filter: drop-shadow(1px 10px 10px #5b8a87);
+            color: white;
+            font-size: 150%;
+            font-weight: normal;
+            border: none;
+            border-radius: 16px;
+        }
+
+        .button:active {
+            box-shadow: 1px 5px 5px #5A6C6A;
+            transform: translateY(4px);
+        }
+
+        #logo {
+            position: absolute;
+            top: 10%;
+            left: 30%;
+            height: 55%;
+            width: 45%;
+        }
+
+        #login {
+            background-color: #BCE3DE;
+            color: rgb(79, 85, 85);
+            font-size: 33px;
+            position: absolute;
+            left: 29rem;
+            bottom: 0.02rem;
+            width: 9rem;
+            height: 3.7rem;
+        }
+
+        h1 {
+            color: white;
+        }
+
+
+        .login-container {
+            position: absolute;
+            background-color: #7ad1c5;
+            border-radius: 16px 16px 16px 16px;
+            left: 27%;
+            top: 13rem;
+            width: 50rem;
+            box-shadow: 1px 10px 10px #5b8a87;
+
+        }
+
+    </style>
+    <title>Login</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#"><img src="../static/logo.png" style="height: 30%; width: 30%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <ul class="my-2 my-lg-0">
+                <li class="nav-item">
+                    <a href="upload.html"><button class="btn btn-outline-info my-2 my-sm-0 ">Continue</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar finished-->
+    <div id="flesh">
+        <img src="../static/background1.png" id="bone">
+        <div>
+            <form class=" col-sm login-container" id="login-form" >
+                <div class="row">
+                    <div class="col-sm  mb-0">
+                        <div class="form-group">
+                            <form>
+                                <div class="row my-4 pl-4">
+                                    <div class="col-sm-6">
+                                        <h1>Login</h1>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 ml-5">
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="email" name="email" id="emailid"
+                                            placeholder="Enter your email" required="required">
+                                    </div>
+                                </div>
+                                <div class="row my-5 ml-5">
+                                    <div class="col-sm-6">
+                                        <input class="form-control" type="password" name="password" id="password1"
+                                            placeholder="Enter your password" required="required">
+                                    </div>
+                                </div>
+                                <div class="row my-5 ml-5">
+                                    <div class="col-sm-6">
+                                        <a href="upload.html"><button class="button" id="login">Login</button></a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+
+            function show(show, hidden) {
+                document.getElementById(show).style.display = 'block';
+                document.getElementById(hidden).style.display = 'none';
+                return false;
+            }
+        </script>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="../static/script.js"></script>
+    
+
+</body>
+
+</html>
